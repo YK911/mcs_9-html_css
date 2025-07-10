@@ -1,0 +1,54 @@
+/* #region Common */
+.page {
+  color: #111;
+}
+
+a {
+  color: currentColor;
+}
+
+button {
+  color: currentColor;
+}
+/* #endregion */
+
+/* #region Logo */
+.logo {}
+.logo-accent {}
+.logo-ill {}
+/* #endregion */
+
+/* #region Socilas */
+.socials {}
+.socials-item {}
+.socials-link {}
+.socials-icon {}
+/* #endregion */
+
+/* #region Header */
+.header {}
+.header-nav {}
+.header-logo {}
+.header-nav-list {}
+.header-nav-item {}
+.header-nav-link {
+}
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: lightgreen;
+}
+/* .header-nav-link:active {
+  cursor: grabbing;
+  color: tomato;
+} */
+.header-socials {}
+/* #endregion */
+
+/* #region Footer */
+.footer {}
+.footer-socials {}
+/* #endregion */
+
+.hero-title {
+  color: #FFFFFF;
+}
