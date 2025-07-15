@@ -71,6 +71,15 @@ address {
 .accent-text {
   color: var(--cl-accent);
 }
+
+.container {
+  max-width: 1168px;
+  padding: 0 16px;
+  margin: 0 auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
 /* #endregion */
 
 /* #region Buttons */
