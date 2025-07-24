@@ -109,12 +109,10 @@
     >
       <path
         fill="none"
-        stroke="#fafafa"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="1.333"
         d="M9.143 16h13.714m0 0-3.429-3.429M22.857 16l-3.429 3.429M16 30.857c8.205 0 14.857-6.652 14.857-14.857S24.205 1.143 16 1.143C7.795 1.143 1.143 7.795 1.143 16S7.795 30.857 16 30.857z"
-        style="stroke:var(--color5, #fafafa)"
       />
     </symbol>
     <symbol
