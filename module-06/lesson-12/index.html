@@ -40,15 +40,27 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header hide" id="home">
+    <header class="header" id="home">
       <div class="container">
         <nav class="header-nav">
           <a class="header-logo logo" href="#">
             <i class="logo-accent">SIMPLY</i> CHOCOLATE
-            <svg width="24" height="24">
+            <svg class="logo-icon" width="21" height="21">
               <use href="./images/icons.svg#logo"></use>
             </svg>
           </a>
+          <button
+            class="header-mobile-btn mobile-menu-btn btn-reset"
+            type="button"
+            aria-label="Mobile menu button"
+          >
+            <svg class="mobile-menu-icon" width="28" height="28">
+              <use href="./images/icons.svg#burger-menu"></use>
+            </svg>
+          </button>
+          <!-- <label class="toggler">
+            <input class="toggler-input visually-hidden" type="checkbox" />
+          </label> -->
           <ul class="header-nav-list">
             <li class="header-nav-item">
               <a class="header-nav-link current" href="#home">Home</a>
@@ -104,7 +116,7 @@
     </header>
     <main>
       <!-- Hero -->
-      <section class="hero hide" id="hero">
+      <section class="hero" id="hero">
         <div class="container">
           <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
@@ -358,13 +370,30 @@
           </h2>
           <ul class="products-list card-set">
             <li class="products-item card-set-item">
-              <img
-                class="products-img"
-                src="./images/products/img-1.jpg"
-                alt="Orange Dark chocolate"
-                width="230"
-                height="201"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/products/img-1@1x.avif 1x,
+                    ./images/products/img-1@2x.avif 2x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./images/products/img-1@1x.jpg 1x,
+                    ./images/products/img-1@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="products-img"
+                  src="./images/products/img-1@1x.jpg"
+                  alt="Orange Dark chocolate"
+                  width="230"
+                  height="201"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="products-caption">Orange</h3>
               <p class="products-type">Dark chocolate</p>
               <button class="products-btn" type="button">45 UAH</button>
@@ -372,10 +401,15 @@
             <li class="products-item card-set-item">
               <img
                 class="products-img"
-                src="./images/products/img-2.jpg"
+                srcset="
+                  ./images/products/img-2@1x.jpg 1x,
+                  ./images/products/img-2@2x.jpg 2x
+                "
+                src="./images/products/img-2@1x.jpg"
                 alt="Apple&Cranberry Milk chocolate"
                 width="230"
                 height="201"
+                loading="lazy"
               />
               <h3 class="products-caption">Apple&Cranberry</h3>
               <p class="products-type">Milk chocolate</p>
@@ -384,10 +418,15 @@
             <li class="products-item card-set-item">
               <img
                 class="products-img"
-                src="./images/products/img-3.jpg"
+                srcset="
+                  ./images/products/img-3@1x.jpg 1x,
+                  ./images/products/img-3@2x.jpg 2x
+                "
+                src="./images/products/img-3@1x.jpg"
                 alt="Lime&Sea salt Dark chocolate"
                 width="230"
                 height="201"
+                loading="lazy"
               />
               <h3 class="products-caption">Lime&Sea salt</h3>
               <p class="products-type">Dark chocolate</p>
@@ -396,10 +435,15 @@
             <li class="products-item card-set-item">
               <img
                 class="products-img"
-                src="./images/products/img-4.jpg"
+                srcset="
+                  ./images/products/img-4@1x.jpg 1x,
+                  ./images/products/img-4@2x.jpg 2x
+                "
+                src="./images/products/img-4@1x.jpg"
                 alt="Pineapple Dark chocolate"
                 width="230"
                 height="201"
+                loading="lazy"
               />
               <h3 class="products-caption">Pineapple</h3>
               <p class="products-type">Dark chocolate</p>
@@ -408,10 +452,15 @@
             <li class="products-item card-set-item">
               <img
                 class="products-img"
-                src="./images/products/img-5.jpg"
+                srcset="
+                  ./images/products/img-5@1x.jpg 1x,
+                  ./images/products/img-5@2x.jpg 2x
+                "
+                src="./images/products/img-5@1x.jpg"
                 alt="Classic Milk chocolate"
                 width="230"
                 height="201"
+                loading="lazy"
               />
               <h3 class="products-caption">Classic</h3>
               <p class="products-type">Milk chocolate</p>
@@ -420,10 +469,15 @@
             <li class="products-item card-set-item">
               <img
                 class="products-img"
-                src="./images/products/img-6.jpg"
+                srcset="
+                  ./images/products/img-6@1x.jpg 1x,
+                  ./images/products/img-6@2x.jpg 2x
+                "
+                src="./images/products/img-6@1x.jpg"
                 alt="Honey Milk chocolate"
                 width="230"
                 height="201"
+                loading="lazy"
               />
               <h3 class="products-caption">Honey</h3>
               <p class="products-type">Milk chocolate</p>
@@ -432,10 +486,15 @@
             <li class="products-item card-set-item">
               <img
                 class="products-img"
-                src="./images/products/img-7.jpg"
+                srcset="
+                  ./images/products/img-7@1x.jpg 1x,
+                  ./images/products/img-7@2x.jpg 2x
+                "
+                src="./images/products/img-7@1x.jpg"
                 alt="Roasted fruits Dark chocolate"
                 width="230"
                 height="201"
+                loading="lazy"
               />
               <h3 class="products-caption">Roasted fruits</h3>
               <p class="products-type">Dark chocolate</p>
@@ -444,10 +503,15 @@
             <li class="products-item card-set-item">
               <img
                 class="products-img"
-                src="./images/products/img-8.jpg"
+                srcset="
+                  ./images/products/img-8@1x.jpg 1x,
+                  ./images/products/img-8@2x.jpg 2x
+                "
+                src="./images/products/img-8@1x.jpg"
                 alt="Classic White chocolate"
                 width="230"
                 height="201"
+                loading="lazy"
               />
               <h3 class="products-caption">Classic</h3>
               <p class="products-type">White chocolate</p>
@@ -793,6 +857,83 @@
           <button class="btn btn-accent" type="submit" disabled>Send</button>
         </form>
       </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+      <button class="mobile-menu-btn btn-reset" type="button">
+        <svg class="mobile-menu-icon" width="28" height="28">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-nav">
+        <li class="mobile-menu-nav-item">
+          <a class="mobile-menu-nav-link active" href="#">Studio</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a class="mobile-menu-nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a class="mobile-menu-nav-link" href="#">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-contacts">
+        <li class="mobile-menu-contacts-item">
+          <a
+            class="mobile-menu-contacts-link accent-text"
+            href="tel:+110001111111"
+          >
+            +11 (000) 111-11-11
+          </a>
+        </li>
+        <li class="mobile-menu-contacts-item">
+          <a class="mobile-menu-contacts-link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-socials socials">
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Facebook"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
